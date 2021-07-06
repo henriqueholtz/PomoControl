@@ -10,6 +10,14 @@ export function App() {
           <Route exact path={["", "/", "/home"]}>
             <PomoControlHedaer title="Home" />
           </Route>
+
+          <Route path={["/login", "/signin"]}>
+            <PomoControlHedaer title="Login" />
+          </Route>
+
+          <Route path={["/register", "/signup"]}>
+            <PomoControlHedaer title="Register" />
+          </Route>
           
           <Route path="/test">
             <PomoControlHedaer title="Test" />
