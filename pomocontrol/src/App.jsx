@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter , Route, Switch } from 'react-router-dom'
+import { PomoControlHedaer } from './src/components'
 
 export function App() {
   return (
@@ -7,10 +8,11 @@ export function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path={["", "/", "/home"]}>
-            <h1>Home</h1>
+            <PomoControlHedaer title="Home" />
           </Route>
+          
           <Route path="/test">
-            <h1>Test</h1>
+            <PomoControlHedaer title="Test" />
           </Route>
         </Switch>
       </BrowserRouter>
