@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-import { PomoControlHedaer } from '../views/components'
 import * as Pages from '../views/pages';
-import { NotFound } from '../views/pages'
+import { NotFound, Test } from '../views/pages'
 import { CustomRoute } from './CustomRoute';
 import { Routes } from './Routes';
 
@@ -26,7 +25,7 @@ export function App() {
           <Route path="*" exact component={() => <NotFound />}/>
           
           <Route path="/test">
-            <PomoControlHedaer title="Test" />
+            <Test />
           </Route>
         </Switch>
     </div>

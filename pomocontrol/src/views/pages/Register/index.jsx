@@ -1,5 +1,10 @@
+import React from 'react'
+import { PomoControlHeader } from '../../components'
+
 export function Register() {
-    return <div>
-        <h1>Register</h1>
-    </div>
+    return (
+        <>
+            <PomoControlHeader title="Register"/>
+        </>
+    )
 }

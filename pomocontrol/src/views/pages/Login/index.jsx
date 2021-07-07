@@ -1,5 +1,10 @@
+import React from 'react'
+import { PomoControlHeader } from '../../components'
+
 export function Login() {
-    return <div>
-        <h1>Login</h1>
-    </div>
+    return (
+        <>
+            <PomoControlHeader title="Login"/>
+        </>
+    )
 }

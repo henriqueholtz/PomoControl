@@ -1,10 +1,10 @@
 import React from 'react'
 import { PomoControlHeader } from '../../components'
 
-export function About() {
+export function Test() {
     return (
         <>
-            <PomoControlHeader title="About"/>
+            <PomoControlHeader title="Test"/>
         </>
     )
 }
