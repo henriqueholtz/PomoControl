@@ -7,7 +7,7 @@ export const Routes = [
     },
     {
         tag: 'about',
-        title: 'about',
+        title: 'About',
         path: '/about',
         componentName: 'About'
     },

@@ -4,7 +4,7 @@ import * as Pages from '../views/pages';
 import { NotFound, Test } from '../views/pages'
 import { CustomRoute } from './CustomRoute';
 import { Routes } from './Routes';
-// import { Util } from '../utils'
+import { setTitle } from '@pomocontrol-utils'
 
 export function App() {
 
@@ -20,7 +20,7 @@ export function App() {
                 const Component = Pages[r.componentName];
                 console.log('x', r)
                 
-                // Util('y')
+                setTitle(r.title)
                 return <Component key={props.match.params.pageId} {...props} />
               }}
             />

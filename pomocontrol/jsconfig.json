@@ -3,7 +3,8 @@
         "baseUrl": "./src",
         "jsx": "react",
         "paths": {
-            "@pomocontrol-components": ["src/views/components/index"]
+            "@pomocontrol-components": ["src/views/components/index"],
+            "@pomocontrol-utils": ["src/utils/index"]
         }
     },
     "exclude": ["node_modules", "**/node_modules/*"]
