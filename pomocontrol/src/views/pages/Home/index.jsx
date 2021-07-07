@@ -1,5 +1,5 @@
 import React from 'react'
-import { PomoControlHeader } from '../../components'
+import { PomoControlHeader } from '@pomocontrol-components'
 
 export function Home() {
     return (

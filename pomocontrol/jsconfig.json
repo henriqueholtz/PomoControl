@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "jsx": "react",
+        "paths": {
+            "@pomocontrol-components": ["src/views/components/index"]
+        }
+    },
+    "exclude": ["node_modules", "**/node_modules/*"]
+}

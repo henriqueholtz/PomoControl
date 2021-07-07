@@ -2,13 +2,7 @@ export const Routes = [
     {
         tag: 'home',
         title: 'Dashboard',
-        path: '/',
-        componentName: 'Home'
-    },
-    {
-        tag: 'home',
-        title: 'Dashboard',
-        path: '/dashboard',
+        path: ['/', '/home', '/dashboard'],
         componentName: 'Home'
     },
     {
@@ -20,13 +14,13 @@ export const Routes = [
     {
         tag: 'login',
         title: 'Login',
-        path: '/Login',
+        path: ['/Login', '/signin'],
         componentName: 'Login'
     },
     {
         tag: 'register',
         title: 'Register',
-        path: '/Register',
+        path: ['/Register', '/signup'],
         componentName: 'Register'
     },
 ]

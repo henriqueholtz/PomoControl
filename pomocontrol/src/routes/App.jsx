@@ -4,6 +4,7 @@ import * as Pages from '../views/pages';
 import { NotFound, Test } from '../views/pages'
 import { CustomRoute } from './CustomRoute';
 import { Routes } from './Routes';
+// import { Util } from '../utils'
 
 export function App() {
 
@@ -17,6 +18,9 @@ export function App() {
               exact
               render={props => {
                 const Component = Pages[r.componentName];
+                console.log('x', r)
+                
+                // Util('y')
                 return <Component key={props.match.params.pageId} {...props} />
               }}
             />
