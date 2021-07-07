@@ -23,4 +23,10 @@ export const Routes = [
         path: ['/Register', '/signup'],
         componentName: 'Register'
     },
+    {
+        tag: 'maintenance',
+        title: 'Maintenance',
+        path: '/maintenance',
+        componentName: 'Maintenance'
+    },
 ]
