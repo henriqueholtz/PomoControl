@@ -5,7 +5,8 @@
         "paths": {
             "@pomocontrol-components": ["src/views/components/index"],
             "@pomocontrol-utils": ["src/utils/index"],
-            "@pomocontrol-enums": ["src/enums/index"]
+            "@pomocontrol-enums": ["src/enums/index"],
+            "@pomocontrol-models": ["src/models/index"]
         }
     },
     "exclude": ["node_modules", "**/node_modules/*"]
