@@ -1,4 +1,4 @@
 export const EnumPages = {
-    Dashboard: "/dashboard",
-    About: '/about'
+    Dashboard: ["/dashboard", "/home"],
+    About: ['/about']
 }
