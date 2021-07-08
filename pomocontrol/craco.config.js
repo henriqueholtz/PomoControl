@@ -5,6 +5,7 @@ module.exports = {
     alias: {
       '@pomocontrol-components': path.resolve(__dirname, 'src/views/components'),
       '@pomocontrol-layouts': path.resolve(__dirname, 'src/views/layouts'),
+      '@pomocontrol-pages': path.resolve(__dirname, 'src/views/pages'),
       '@pomocontrol-utils': path.resolve(__dirname, 'src/utils'),
       '@pomocontrol-enums': path.resolve(__dirname, 'src/enums'),
       '@pomocontrol-models': path.resolve(__dirname, 'src/models')
