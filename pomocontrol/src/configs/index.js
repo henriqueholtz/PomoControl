@@ -1,0 +1,1 @@
+export { DesenvConfig } from './development'
