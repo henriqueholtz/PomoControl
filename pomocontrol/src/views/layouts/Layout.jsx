@@ -2,16 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { PomoControlMenu, PomoControlHeader } from '@pomocontrol-components'
 import { NotFound } from '@pomocontrol-pages'
-import { EnumPages } from '@pomocontrol-enums'
 
-const pages =  Object.keys(EnumPages).map(value => ({
-    title: value, 
-    path: EnumPages[value]
-}));
-
-export function Layout() {
+export function Layout({pages}) {
     const path = window.location.pathname;
-    const currentPage = pages.find(e => e?.path.find(p => p === path));
+    const currentPage = pages?.find(e => e?.paths?.find(p => p === path)) || null;
     if(!currentPage) return <NotFound />
 
     return (

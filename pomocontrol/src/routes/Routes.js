@@ -8,7 +8,7 @@ export const Routes = [
     {
         tag: 'about',
         title: 'About',
-        path: '/about',
+        path: ['/about'],
         componentName: 'About'
     },
     {
@@ -26,7 +26,7 @@ export const Routes = [
     {
         tag: 'maintenance',
         title: 'Maintenance',
-        path: '/maintenance',
+        path: ['/maintenance'],
         componentName: 'Maintenance'
     },
 ]
