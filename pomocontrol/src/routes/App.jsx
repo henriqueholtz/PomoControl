@@ -6,6 +6,7 @@ import { CustomRoute } from './CustomRoute';
 import { Routes } from './Routes';
 import { setTitle } from '@pomocontrol-utils'
 import { Layout } from '@pomocontrol-layouts'
+import CssBaseline from '@material-ui/core/CssBaseline';
  
 export function App() {
   const [pages, setPages] = useState([]);
@@ -20,8 +21,10 @@ export function App() {
   }, [Pages]);
   
   return (
-    <div className="App">
+    // <div className="App">
+    <>
       {pagesMemo}
+      <CssBaseline />
       <Switch>
             {Routes.map(r => (
 
@@ -47,6 +50,7 @@ export function App() {
               <Test />
             </Route>
       </Switch>
-    </div>
+      </>
+    // </div>
   );
 }

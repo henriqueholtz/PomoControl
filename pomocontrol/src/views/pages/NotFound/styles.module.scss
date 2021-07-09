@@ -1,0 +1,23 @@
+.container {
+    background-color: #ccc;;
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    min-height: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.icon {
+    width: 85px !important;
+    height: 85px !important;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
