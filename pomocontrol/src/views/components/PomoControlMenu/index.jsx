@@ -8,6 +8,7 @@ export function PomoControlMenu() {
             <ul>
                 <PomoControlMenuItem text="Dashboard" path="/dashboard" />
                 <PomoControlMenuItem text="About" path="/about" />
+                <PomoControlMenuItem text="Not Found Custom" path="/404" />
             </ul>
         </nav>
     )

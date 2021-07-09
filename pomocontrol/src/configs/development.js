@@ -2,7 +2,7 @@ import { EnumEnvironment } from '@pomocontrol-enums'
 
 const config = {
     api: {
-        backendUrl: 'https://localhost:1000/api/'
+        backendUrl: 'http://localhost:5000/api/'
     },
     environment: EnumEnvironment.DEBUG
 }
