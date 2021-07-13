@@ -1,15 +1,17 @@
-import React, { useState, useMemo} from 'react';
-import { Route, Switch } from 'react-router-dom'
+import React, { useState, useMemo, useEffect} from 'react';
+import { Route, Switch, useHistory } from 'react-router-dom'
 import * as Pages from '../views/pages';
 import { NotFound, Test } from '../views/pages'
 import { CustomRoute } from './CustomRoute';
 import { Routes } from './Routes';
-import { setTitle } from '@pomocontrol-utils'
+import { setTitle, Request } from '@pomocontrol-utils'
 import { Layout } from '@pomocontrol-layouts'
 import CssBaseline from '@material-ui/core/CssBaseline';
  
 export function App() {
   const [pages, setPages] = useState([]);
+  const [maintenance, setMaintenance] = useState(false)
+  const history = useHistory();
 
   const pagesMemo = useMemo(() => {
     console.warn('Loading all routes.');
@@ -19,6 +21,21 @@ export function App() {
     }));
     setPages(internalPages);
   }, [Pages]);
+
+  useEffect(() => {
+    Request.Get('health')
+      .then(() => {
+        setMaintenance(false);
+      }).catch((ex) => {
+        console.error('API is offline', ex);
+        setMaintenance(true);
+      })
+  }, [])
+
+  if (maintenance) {
+
+    history.push('/maintenance');
+  }
   
   return (
     // <div className="App">
