@@ -16,6 +16,7 @@ module.exports = {
       moduleNameMapper: {
           '^@pomocontrol-components(.*)$':  '<rootDir>/src/views/components$1',
           '^@pomocontrol-layouts(.*)$':  '<rootDir>/src/views/layouts$1',
+          '^@pomocontrol-pages(.*)$':  '<rootDir>/src/views/pages$1',
           '^@pomocontrol-utils(.*)$':  '<rootDir>/src/utils$1',
           '^@pomocontrol-enums(.*)$':  '<rootDir>/src/enums$1',
           '^@pomocontrol-models(.*)$':  '<rootDir>/src/models$1'
