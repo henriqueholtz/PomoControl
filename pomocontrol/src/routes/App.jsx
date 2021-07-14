@@ -1,11 +1,11 @@
 import React, { useState, useMemo, useEffect} from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom'
+import { Route, Switch, useHistory, BrowserRouter } from 'react-router-dom';
 import * as Pages from '../views/pages';
 import { NotFound, Test } from '../views/pages'
 import { CustomRoute } from './CustomRoute';
 import { Routes } from './Routes';
-import { setTitle, Request } from '@pomocontrol-utils'
-import { Layout } from '@pomocontrol-layouts'
+import { setTitle, Request } from '@pomocontrol-utils';
+import { Layout } from '@pomocontrol-layouts';
 import CssBaseline from '@material-ui/core/CssBaseline';
  
 export function App() {
@@ -38,36 +38,36 @@ export function App() {
   }
   
   return (
-    // <div className="App">
     <>
       {pagesMemo}
       <CssBaseline />
-      <Switch>
-            {Routes.map(r => (
+      <BrowserRouter>
+        <Switch>
+              {Routes.map(r => (
 
-              <Layout pages={pages}>
-                <CustomRoute 
-                  key={r.componentName}
-                  path={r.path}
-                  exact
-                  render={props => {
-                    const Component = Pages[r.componentName];
-                    console.log('x', r)
-                    
-                    setTitle(r.title)
-                    return <Component key={props.match.params.pageId} {...props} />
-                    }}
-                  />
-                </Layout>
-            ))}
+                <Layout pages={pages} key={r.id}>
+                  <CustomRoute 
+                    key={r.componentName}
+                    path={r.path}
+                    exact
+                    render={props => {
+                      const Component = Pages[r.componentName];
+                      console.log('x', r)
+                      
+                      setTitle(r.title)
+                      return <Component key={props.match.params.pageId} {...props} />
+                      }}
+                    />
+                  </Layout>
+              ))}
 
-            <Route path="*" exact component={() => <NotFound />}/>
-            
-            <Route path="/test">
-              <Test />
-            </Route>
-      </Switch>
+              <Route path="*" exact component={() => <NotFound />}/>
+              
+              <Route path="/test">
+                <Test />
+              </Route>
+        </Switch>
+      </BrowserRouter> 
       </>
-    // </div>
   );
 }

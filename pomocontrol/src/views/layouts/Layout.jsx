@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
-import { PomoControlMenu, PomoControlHeader } from '@pomocontrol-components'
-import { NotFound } from '@pomocontrol-pages'
+import { PomoControlMenu, PomoControlHeader } from '@pomocontrol-components';
+import { NotFound } from '@pomocontrol-pages';
 
 export function Layout({pages}) {
     const path = window.location.pathname;

@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-export function PomoControlMenuItem({text, path}) {
+export function PomoControlMenuItem({id, text, path}) {
+    
     return (
-        <li>
+        <li key={id}>
             <Link to={path} href={path}>
                 <span>{text}</span>
              </Link>
