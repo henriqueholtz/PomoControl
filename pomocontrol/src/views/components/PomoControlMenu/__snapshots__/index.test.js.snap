@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Snapshot of Component Comparing snapshot PomoControlMenu 1`] = `
+<nav>
+  <h1>
+    Menu
+  </h1>
+  <ul>
+    <li>
+      <a
+        href="/dashboard"
+      >
+        <span>
+          Dashboard
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="/about"
+      >
+        <span>
+          About
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="/404"
+      >
+        <span>
+          Not Found Custom
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
