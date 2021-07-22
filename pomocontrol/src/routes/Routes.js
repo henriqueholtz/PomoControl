@@ -17,14 +17,14 @@ export const Routes = [
         id: 3,
         tag: 'login',
         title: 'Login',
-        path: ['/Login', '/signin'],
+        path: ['/login', '/signin'],
         componentName: 'Login'
     },
     {
         id: 4,
         tag: 'register',
         title: 'Register',
-        path: ['/Register', '/signup'],
+        path: ['/register', '/signup'],
         componentName: 'Register'
     },
     {

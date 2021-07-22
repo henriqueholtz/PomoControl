@@ -7,7 +7,7 @@ export function PomoControlMenuItem({id, text, path}) {
     return (
         <li key={id}>
             <Link to={path} href={path}>
-                <span>{text}</span>
+                <span className="text-capitalize">{text}</span>
              </Link>
          </li>
     )

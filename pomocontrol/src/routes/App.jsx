@@ -7,6 +7,8 @@ import { Routes } from './Routes';
 import { setTitle, Request } from '@pomocontrol-utils';
 import { Layout } from '@pomocontrol-layouts';
 import CssBaseline from '@material-ui/core/CssBaseline';
+
+import '../styles/styles.scss';
  
 export function App() {
   const [pages, setPages] = useState([]);
