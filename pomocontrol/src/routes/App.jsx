@@ -16,11 +16,13 @@ export function App() {
   const history = useHistory();
 
   const pagesMemo = useMemo(() => {
-    console.warn('Loading all routes.');
     const internalPages = Object.keys(Routes).map(value => ({
-        title: Routes[value].title, 
-        paths: Routes[value].path
+      title: Routes[value].title, 
+      paths: Routes[value].paths,
+      hasMenu: Routes[value]?.menus?.length > 0,
+      menus: Routes[value]?.menus || [],
     }));
+    console.warn('Loading all routes.', internalPages);
     setPages(internalPages);
   }, [Pages]);
 

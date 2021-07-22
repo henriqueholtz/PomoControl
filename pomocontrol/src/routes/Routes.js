@@ -1,37 +1,44 @@
+import { EnumMenus } from '@pomocontrol-enums'
+
 export const Routes = [
     {
         id: 1,
         tag: 'home',
+        menus: [EnumMenus.All], 
         title: 'Dashboard',
-        path: ['/', '/home', '/dashboard'],
+        paths: ['/', '/home', '/dashboard'],
         componentName: 'Home'
     },
     {
         id: 2,
         tag: 'about',
+        menus: [EnumMenus.All], 
         title: 'About',
-        path: ['/about'],
+        paths: ['/about'],
         componentName: 'About'
     },
     {
         id: 3,
         tag: 'login',
+        menus: [EnumMenus.All], 
         title: 'Login',
-        path: ['/login', '/signin'],
+        paths: ['/login', '/signin'],
         componentName: 'Login'
     },
     {
         id: 4,
         tag: 'register',
+        menus: [EnumMenus.All], 
         title: 'Register',
-        path: ['/register', '/signup'],
+        paths: ['/register', '/signup'],
         componentName: 'Register'
     },
     {
         id: 5,
         tag: 'maintenance',
+        menus: [], 
         title: 'Maintenance',
-        path: ['/maintenance'],
+        paths: ['/maintenance'],
         componentName: 'Maintenance'
     },
 ]
