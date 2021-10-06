@@ -41,4 +41,23 @@ export const Routes = [
         paths: ['/maintenance'],
         componentName: 'Maintenance'
     },
+    {
+        id: 6,
+        tag: 'technical',
+        menus: [],
+        title: 'Technical: Pomodoro',
+        paths: ['/technical', '/pomodoro'],
+        componentName: 'Technical'
+    },
+
+    
+    {
+        // MuiTheme
+        id: 99,
+        tag: 'theme',
+        menus: [],
+        title: 'MuiTheme',
+        paths: ['/MuiTheme', '/theme', '/mui-theme'],
+        componentName: 'MuiTheme'
+    }
 ]

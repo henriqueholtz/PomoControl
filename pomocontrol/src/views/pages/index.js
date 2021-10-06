@@ -4,4 +4,6 @@ export { Login } from './Login';
 export { Register } from './Register';
 export { NotFound } from './NotFound';
 export { Maintenance } from './Maintenance';
+export { MuiTheme } from './MuiTheme';
+export { Technical } from './Technical';
 export { Test } from './Test';
