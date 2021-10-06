@@ -2,7 +2,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Layout } from '@pomocontrol-layouts';
 import { setTitle, Request } from '@pomocontrol-utils';
 import React, { useState, useMemo, useEffect} from 'react';
-import { Route, Switch, BrowserRouter, useHistory } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import * as Pages from '../views/pages';
 import { NotFound, Test } from '../views/pages'
 import { CustomRoute } from './CustomRoute';
@@ -13,7 +13,7 @@ import '../styles/styles.scss';
 export function App() {
   const [pages, setPages] = useState([]);
   const [maintenance, setMaintenance] = useState(false)
-  const history = useHistory();
+  // const history = useHistory(); react-router-dom
 
   const pagesMemo = useMemo(() => {
     const internalPages = Object.keys(Routes).map(value => ({
@@ -38,8 +38,8 @@ export function App() {
   }, [])
 
   if (maintenance) {
-
-    history.push('/maintenance');
+    console.log('Maintenance!')
+    // history.push('/maintenance');
   }
   
   return (
