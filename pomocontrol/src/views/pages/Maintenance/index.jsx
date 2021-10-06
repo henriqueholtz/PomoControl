@@ -1,10 +1,10 @@
 import React from 'react'
-import { PomoControlHeader } from '@pomocontrol-components'
+import { Container } from '@material-ui/core'
 
 export function Maintenance() {
     return (
-        <>
-            <PomoControlHeader title="Maintenance"/>
-        </>
+        <Container>
+            <img src="/assets/png/maintenance-256.png" alt="Maintenance"/>
+        </Container>
     )
 }

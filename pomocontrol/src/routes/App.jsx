@@ -21,6 +21,7 @@ export function App() {
       paths: Routes[value].paths,
       hasMenu: Routes[value]?.menus?.length > 0,
       menus: Routes[value]?.menus || [],
+      componentName: Routes[value].componentName,
     }));
     console.warn('Loading all routes.', internalPages);
     setPages(internalPages);
@@ -56,7 +57,7 @@ export function App() {
                     exact
                     render={props => {
                       const Component = Pages[r.componentName];
-                      
+                      console.log('x',  Pages[r.componentName])
                       setTitle(r.title)
                       return (
                         <Component 
