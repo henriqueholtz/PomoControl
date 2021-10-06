@@ -4,6 +4,14 @@
     position: relative;
 }
 
+.button {
+    position: absolute;
+    left: 5vw;
+    top: 8vh;
+    cursor: pointer;
+    z-index: 1;
+}
+
 .header {
     min-height: 20rem;
     position: relative;
