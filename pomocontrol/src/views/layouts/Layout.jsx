@@ -1,8 +1,10 @@
+import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { PomoControlMenu, PomoControlHeader } from '@pomocontrol-components';
 import { NotFound } from '@pomocontrol-pages';
 import { PomoControlFooter } from 'views/components';
+import { theme } from './theme';
 
 export function Layout({pages}) {
     const path = window.location.pathname;
@@ -10,11 +12,13 @@ export function Layout({pages}) {
     if(!currentPage) return <NotFound />
 
     return (
-        <div id="layout">
-            <PomoControlMenu />
-            <PomoControlHeader title={currentPage.title} />
-            <PomoControlFooter />
-        </div>
+        <ThemeProvider theme={theme} >
+            <div id="layout">
+                <PomoControlMenu />
+                <PomoControlHeader title={currentPage.title} />
+                <PomoControlFooter />
+            </div>
+        </ThemeProvider>
     )
 }
 

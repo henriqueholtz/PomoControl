@@ -1,7 +1,12 @@
 .container {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    align-content: center;
+    background-color: var(#ccc);
 }
