@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PomoControl",
+  "name": "Application to control your pomodoro",
   "icons": [
     {
       "src": "favicon.ico",
