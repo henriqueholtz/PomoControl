@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PomoControlMenu, PomoControlHeader } from '@pomocontrol-components';
 import { NotFound } from '@pomocontrol-pages';
+import { PomoControlFooter } from 'views/components';
 
 export function Layout({pages}) {
     const path = window.location.pathname;
@@ -12,6 +13,7 @@ export function Layout({pages}) {
         <div id="layout">
             <PomoControlMenu />
             <PomoControlHeader title={currentPage.title} />
+            <PomoControlFooter />
         </div>
     )
 }
