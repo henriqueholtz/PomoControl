@@ -1,3 +1,4 @@
+/* eslint-disable */
 // import { PomoControlSettings }
 const urlBase = 'https://localhost:5001/api/';
 const urlsAllowAnonymous = ['health', 'signin', 'signup'];

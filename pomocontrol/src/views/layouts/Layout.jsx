@@ -23,5 +23,10 @@ Layout.defaultProps = {
 }
 
 Layout.propTypes = {
-    // title: PropTypes.string.isRequired
+    pages: PropTypes.arrayOf({
+        title: PropTypes.string.isRequired,
+        paths: PropTypes.string.isRequired,
+        hasMenu: PropTypes.string.isRequired,
+        menus: PropTypes.string.isRequired,
+    }).isRequired
 }

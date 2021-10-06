@@ -1,12 +1,12 @@
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { Layout } from '@pomocontrol-layouts';
+import { setTitle, Request } from '@pomocontrol-utils';
 import React, { useState, useMemo, useEffect} from 'react';
-import { Route, Switch, useHistory, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, BrowserRouter, useHistory } from 'react-router-dom';
 import * as Pages from '../views/pages';
 import { NotFound, Test } from '../views/pages'
 import { CustomRoute } from './CustomRoute';
 import { Routes } from './Routes';
-import { setTitle, Request } from '@pomocontrol-utils';
-import { Layout } from '@pomocontrol-layouts';
-import CssBaseline from '@material-ui/core/CssBaseline';
 
 import '../styles/styles.scss';
  
@@ -38,7 +38,7 @@ export function App() {
 
   if (maintenance) {
 
-    //history.push('/maintenance');
+    history.push('/maintenance');
   }
   
   return (
@@ -56,11 +56,16 @@ export function App() {
                     exact
                     render={props => {
                       const Component = Pages[r.componentName];
-                      console.log('x', r)
                       
                       setTitle(r.title)
-                      return <Component key={props.match.params.pageId} {...props} />
-                      }}
+                      return (
+                        <Component 
+                          // eslint-disable-next-line react/prop-types
+                          key={props.match.params.pageId} 
+                          // eslint-disable-next-line react/jsx-props-no-spreading
+                          {...props} 
+                        />
+                      )}}
                     />
                   </Layout>
               ))}
