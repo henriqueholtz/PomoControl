@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PomoControlMenu, PomoControlHeader } from '@pomocontrol-components';
+import { PomoControlMenu } from '@pomocontrol-components';
 import { NotFound } from '@pomocontrol-pages';
 import * as Pages from '@pomocontrol-pages'
 import { PomoControlFooter } from 'views/components';
@@ -17,7 +17,6 @@ export function Layout({pages}) {
         <ThemeProvider theme={theme} >
             <div id="layout">
                 <PomoControlMenu />
-                <PomoControlHeader title={currentPage.title} />
                 <Component />
                 <PomoControlFooter />
             </div>
