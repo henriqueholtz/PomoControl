@@ -4,7 +4,7 @@ import { PomoControlTitle } from '@pomocontrol-components';
 
 export function PomoControlHeader({title, className}) {
     return (
-        <header className={className}>
+        <header className={className} style={{ marginTop: '48px' }}>
             <PomoControlTitle text={title} />
         </header>
     );
