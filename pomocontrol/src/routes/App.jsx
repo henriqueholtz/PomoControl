@@ -38,7 +38,7 @@ export function App() {
 
   if (maintenance) {
 
-    history.push('/maintenance');
+    //history.push('/maintenance');
   }
   
   return (
