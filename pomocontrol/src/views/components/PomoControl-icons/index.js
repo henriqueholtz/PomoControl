@@ -1,0 +1,1 @@
+export { GoogleAuthenticationIcon } from './GoogleAuthenticationIcon'

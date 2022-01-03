@@ -4,6 +4,7 @@ module.exports = {
   webpack: {
     alias: {
       '@pomocontrol-components': path.resolve(__dirname, 'src/views/components'),
+      '@pomocontrol-icons': path.resolve(__dirname, 'src/views/components/PomoControl-icons'),
       '@pomocontrol-media': path.resolve(__dirname, 'src/views/components/PomoControlMedia'),
       '@pomocontrol-layouts': path.resolve(__dirname, 'src/views/layouts'),
       '@pomocontrol-pages': path.resolve(__dirname, 'src/views/pages'),
@@ -16,6 +17,7 @@ module.exports = {
     configure: {
       moduleNameMapper: {
           '^@pomocontrol-media(.*)$':  '<rootDir>/src/views/components/PomoControlMedia$1',
+          '^@pomocontrol-icons(.*)$':  '<rootDir>/src/views/components/PomoControl-icons$1',
           '^@pomocontrol-components(.*)$':  '<rootDir>/src/views/components$1',
           '^@pomocontrol-layouts(.*)$':  '<rootDir>/src/views/layouts$1',
           '^@pomocontrol-pages(.*)$':  '<rootDir>/src/views/pages$1',

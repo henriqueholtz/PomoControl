@@ -4,6 +4,7 @@
         "jsx": "react",
         "paths": {
             "@pomocontrol-media": ["src/views/components/PomoControlMedia/index"],
+            "@pomocontrol-icons": ["src/views/components/PomoControl-icons/index"],
             "@pomocontrol-components": ["src/views/components/index"],
             "@pomocontrol-layouts": ["src/views/layouts/index"],
             "@pomocontrol-pages": ["src/views/pages/index"],
