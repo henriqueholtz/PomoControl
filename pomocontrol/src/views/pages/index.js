@@ -1,7 +1,7 @@
 export { About } from './About';
 export { Home } from './Home';
-export { Login } from './Login';
-export { Register } from './Register';
+export { Login } from './Authentication/Login';
+export { Register } from './Authentication/Register';
 export { NotFound } from './NotFound';
 export { Maintenance } from './Maintenance';
 export { MuiTheme } from './MuiTheme';
