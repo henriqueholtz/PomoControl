@@ -1,0 +1,20 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs';
+import { UnavailableIcon } from '../'
+
+<Meta title="@pomocontrol-icons" />
+
+<ArgsTable of={PomoControlHeader} />
+
+<Canvas>
+  <Story
+    name="UnavailableIcon"
+    args={{
+      ...UnavailableIcon.defaultProps,
+      width: 60,
+      height: 60,
+      viewBox:"0 0 30 30"
+    }}
+  >
+    {(args) => <UnavailableIcon {...args} />}
+  </Story>
+</Canvas>
