@@ -75,5 +75,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.4.1",
     "prop-types": "^15.7.2"
+  },
+  "optionalDependencies": {
+    "babel-loader": "8.1.0"
   }
 }
