@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core'
 
 import styles from './styles.module.scss';
 
-export function PomoControlTitle({text, className}) {
+export function PomoControlTitle({ text, className }) {
     return <Typography className={`${styles.title} ${className}`} variant="h1">{text}</Typography>
 }
 
