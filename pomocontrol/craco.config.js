@@ -10,7 +10,8 @@ module.exports = {
       '@pomocontrol-pages': path.resolve(__dirname, 'src/views/pages'),
       '@pomocontrol-utils': path.resolve(__dirname, 'src/utils'),
       '@pomocontrol-enums': path.resolve(__dirname, 'src/enums'),
-      '@pomocontrol-models': path.resolve(__dirname, 'src/models')
+      '@pomocontrol-models': path.resolve(__dirname, 'src/models'),
+      '@pomocontrol-contexts': path.resolve(__dirname, 'src/contexts')
     }
   },
   jest: {
@@ -23,7 +24,8 @@ module.exports = {
           '^@pomocontrol-pages(.*)$':  '<rootDir>/src/views/pages$1',
           '^@pomocontrol-utils(.*)$':  '<rootDir>/src/utils$1',
           '^@pomocontrol-enums(.*)$':  '<rootDir>/src/enums$1',
-          '^@pomocontrol-models(.*)$':  '<rootDir>/src/models$1'
+          '^@pomocontrol-models(.*)$':  '<rootDir>/src/models$1',
+          '^@pomocontrol-contexts(.*)$':  '<rootDir>/src/contexts$1'
         // '^@(.*)$': '<rootDir>/src$1'
       }
     }

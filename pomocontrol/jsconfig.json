@@ -10,7 +10,8 @@
             "@pomocontrol-pages": ["src/views/pages/index"],
             "@pomocontrol-utils": ["src/utils/index"],
             "@pomocontrol-enums": ["src/enums/index"],
-            "@pomocontrol-models": ["src/models/index"]
+            "@pomocontrol-models": ["src/models/index"],
+            "@pomocontrol-contexts": ["src/contexts/index"]
         }
     },
     "exclude": ["node_modules", "**/node_modules/*"]
