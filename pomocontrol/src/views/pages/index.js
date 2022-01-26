@@ -1,6 +1,7 @@
 export { About } from './About';
 export { Home } from './Home';
 export { Login } from './Authentication/Login';
+export { Logout } from './Authentication/Logout';
 export { Register } from './Authentication/Register';
 export { NotFound } from './NotFound';
 export { Maintenance } from './Maintenance';

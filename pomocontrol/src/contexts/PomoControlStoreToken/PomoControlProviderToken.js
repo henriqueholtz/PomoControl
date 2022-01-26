@@ -10,7 +10,8 @@ export const PomoControlProviderToken = ({ children }) => {
 
     function setToken(newToken) {
         _setToken(newToken);
-        localStorage.setItem('token', newToken);
+        if (newToken) localStorage.setItem('token', newToken);
+        else localStorage.removeItem('token');
     }
 
     return (
