@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { Layout } from '@pomocontrol-layouts';
 
-export function CustomRoute({ ...rest }) {
+export function PublicCustomRoute({ ...rest }) {
     // const user = useSelector(state => state && state.oidc  && state.oidc.user)
 
     return (

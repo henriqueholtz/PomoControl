@@ -3,7 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import React from 'react';
 import { Switch, BrowserRouter } from 'react-router-dom';
 import { NotFound, Logout, Login, Home } from '@pomocontrol-pages';
-import { CustomRoute } from './CustomRoute';
+import { PublicCustomRoute } from './PublicCustomRoute';
 
 import '../styles/styles.scss';
 
@@ -13,12 +13,12 @@ export function App() {
             <CssBaseline />
             <BrowserRouter>
                 <Switch>
-                    <CustomRoute exact render={() => <Logout />} path="/logout" />
-                    <CustomRoute exact render={() => <Login />} path="/login" />
-                    <CustomRoute exact render={() => <Login />} path="/signin" />
-                    <CustomRoute exact render={() => <Home />} path="/home" />
-                    <CustomRoute exact render={() => <Home />} path="/" />
-                    <CustomRoute exact render={() => <Home />} path="/dashboard" />
+                    <PublicCustomRoute exact render={() => <Logout />} path="/logout" />
+                    <PublicCustomRoute exact render={() => <Login />} path="/login" />
+                    <PublicCustomRoute exact render={() => <Login />} path="/signin" />
+                    <PublicCustomRoute exact render={() => <Home />} path="/home" />
+                    <PublicCustomRoute exact render={() => <Home />} path="/" />
+                    <PublicCustomRoute exact render={() => <Home />} path="/dashboard" />
 
                     {/* <CustomPrivateRoute path="/CustomPrivateRoute" exact component={<Test />} /> */}
 
@@ -26,7 +26,7 @@ export function App() {
                         <>
                             {r?.paths?.map((path) => (
                                 <>
-                                    <CustomRoute
+                                    <PublicCustomRoute
                                         key={`${r.componentName}${path}`}
                                         path={path}
                                         exact
@@ -50,7 +50,7 @@ export function App() {
                             ))}
                         </>
                     ))} */}
-                    <CustomRoute render={() => <NotFound />} path="*" />
+                    <PublicCustomRoute render={() => <NotFound />} path="*" />
                 </Switch>
             </BrowserRouter>
         </>
