@@ -1,3 +1,3 @@
-export const ListMenuAnonymous = ['dashboard', 'login', 'register', 'technical', 'theme', 'NotFound', 'Logout'];
-export const ListMenuAuthenticated = ['dashboard', 'about', 'profile'];
+export const ListMenuAnonymous = ['Pomodoro', 'about', 'login', 'register'];
+export const ListMenuAuthenticated = ['dashboard', 'profile', 'Logout'];
 export const ListMenuAdm = ['dashboard', 'about', 'profile', 'panel'];
