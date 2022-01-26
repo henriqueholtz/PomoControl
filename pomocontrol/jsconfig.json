@@ -11,6 +11,7 @@
             "@pomocontrol-utils": ["src/utils/index"],
             "@pomocontrol-enums": ["src/enums/index"],
             "@pomocontrol-models": ["src/models/index"],
+            "@pomocontrol-apis": ["src/api/index"],
             "@pomocontrol-contexts": ["src/contexts/index"]
         }
     },

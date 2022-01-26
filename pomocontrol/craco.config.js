@@ -11,6 +11,7 @@ module.exports = {
       '@pomocontrol-utils': path.resolve(__dirname, 'src/utils'),
       '@pomocontrol-enums': path.resolve(__dirname, 'src/enums'),
       '@pomocontrol-models': path.resolve(__dirname, 'src/models'),
+      '@pomocontrol-apis': path.resolve(__dirname, 'src/api'),
       '@pomocontrol-contexts': path.resolve(__dirname, 'src/contexts')
     }
   },
@@ -25,6 +26,7 @@ module.exports = {
           '^@pomocontrol-utils(.*)$':  '<rootDir>/src/utils$1',
           '^@pomocontrol-enums(.*)$':  '<rootDir>/src/enums$1',
           '^@pomocontrol-models(.*)$':  '<rootDir>/src/models$1',
+          '^@pomocontrol-apis(.*)$':  '<rootDir>/src/api$1',
           '^@pomocontrol-contexts(.*)$':  '<rootDir>/src/contexts$1'
         // '^@(.*)$': '<rootDir>/src$1'
       }
