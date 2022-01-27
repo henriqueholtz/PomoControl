@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-// import { useStorage } from '@pomocontrol-utils/Hooks';
+import { useStorage } from '@pomocontrol-utils/Hooks';
 
 import { PomoControlStoreContextToken } from './PomoControlStoreContextToken';
 
 export const PomoControlProviderToken = ({ children }) => {
-    const [token, _setToken] = useState(localStorage.getItem('token'));
-    // useStorage('token');
+    const [token, _setToken] = useStorage('token');
 
     function setToken(newToken) {
         _setToken(newToken);
