@@ -1,4 +1,4 @@
-import { Routes } from './Routes'
+import { Routes } from './Routes';
 import { App } from './App';
 
-export { Routes, App }
+export { Routes, App };
