@@ -11,20 +11,22 @@ export function MixLayout({ children }) {
     const { token } = useContext(PomoControlStoreContextToken);
 
     const setMenu = useCallback(() => {
-        console.log('setMenu');
         if (token) {
             if (menu !== ListMenuAuthenticated) {
+                console.log('updateMenu');
                 _setMenu(ListMenuAuthenticated);
             }
             return;
         }
 
         if (menu !== ListMenuAnonymous) {
+            console.log('updateMenu');
             _setMenu(ListMenuAnonymous);
         }
-    }, [menu, _setMenu, ListMenuAnonymous, ListMenuAuthenticated]);
+    }, [menu, _setMenu]);
 
     useEffect(() => {
+        console.log('effectToken');
         setMenu();
     }, [token]);
 
