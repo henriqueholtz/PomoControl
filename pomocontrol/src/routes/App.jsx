@@ -3,6 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import React from 'react';
 import { Switch, BrowserRouter } from 'react-router-dom';
 import { NotFound, Logout, Login, Home, Register, About, Technical, Profile } from '@pomocontrol-pages';
+import { MixCustomRoute } from './MixCustomRoute';
 import { PublicCustomRoute } from './PublicCustomRoute';
 import { PrivateCustomRoute } from './PrivateCustomRoute';
 
@@ -17,11 +18,11 @@ export function App() {
                     <PublicCustomRoute exact render={() => <Logout />} path="/logout" />
                     <PublicCustomRoute exact render={() => <Login />} path="/login" />
                     <PublicCustomRoute exact render={() => <Login />} path="/signin" />
-                    <PublicCustomRoute exact render={() => <Technical />} path="/Pomodoro" />
-                    <PublicCustomRoute exact render={() => <About />} path="/About" />
-                    <PrivateCustomRoute exact render={() => <Home />} path="/home" />
-                    <PrivateCustomRoute exact render={() => <Home />} path="/" />
-                    <PrivateCustomRoute exact render={() => <Home />} path="/dashboard" />
+                    <PublicCustomRoute exact render={() => <Technical />} path="/pomodoro" />
+                    <PublicCustomRoute exact render={() => <About />} path="/about" />
+                    <MixCustomRoute exact render={() => <Home />} path="/home" />
+                    <MixCustomRoute exact render={() => <Home />} path="/" />
+                    <MixCustomRoute exact render={() => <Home />} path="/dashboard" />
                     <PrivateCustomRoute exact render={() => <Profile />} path="/profile" />
                     <PublicCustomRoute exact render={() => <Register />} path="/register" />
 
@@ -53,7 +54,7 @@ export function App() {
                             ))}
                         </>
                     ))} */}
-                    <PublicCustomRoute render={() => <NotFound />} path="*" />
+                    <MixCustomRoute render={() => <NotFound />} path="*" />
                 </Switch>
             </BrowserRouter>
         </>
