@@ -3,6 +3,7 @@ export { Home } from './Home';
 export { Login } from './Authentication/Login';
 export { Logout } from './Authentication/Logout';
 export { Register } from './Authentication/Register';
+export { Profile } from './Profile';
 export { NotFound } from './NotFound';
 export { Maintenance } from './Maintenance';
 export { MuiTheme } from './MuiTheme';

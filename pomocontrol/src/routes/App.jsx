@@ -2,7 +2,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 // import { setTitle } from '@pomocontrol-utils';
 import React from 'react';
 import { Switch, BrowserRouter } from 'react-router-dom';
-import { NotFound, Logout, Login, Home, Register, About, Technical } from '@pomocontrol-pages';
+import { NotFound, Logout, Login, Home, Register, About, Technical, Profile } from '@pomocontrol-pages';
 import { PublicCustomRoute } from './PublicCustomRoute';
 import { PrivateCustomRoute } from './PrivateCustomRoute';
 
@@ -22,6 +22,7 @@ export function App() {
                     <PrivateCustomRoute exact render={() => <Home />} path="/home" />
                     <PrivateCustomRoute exact render={() => <Home />} path="/" />
                     <PrivateCustomRoute exact render={() => <Home />} path="/dashboard" />
+                    <PrivateCustomRoute exact render={() => <Profile />} path="/profile" />
                     <PrivateCustomRoute exact render={() => <Register />} path="/register" />
 
                     {/* {Routes.map((r) => (
