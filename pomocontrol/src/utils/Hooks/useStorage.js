@@ -2,15 +2,18 @@ import { useCallback, useState } from 'react';
 import { PomoControlStorage } from '../PomoControlStorage';
 
 export function useStorage(key) {
-    const [state, setState] = useState(() => PomoControlStorage.get(key))
+    const [state, setState] = useState(() => PomoControlStorage.Get(key));
 
-    const set = useCallback(newValue => {
-        PomoControlStorage.set(key, newValue);
-        setState(newValue);
-    }, [key])
+    const set = useCallback(
+        (newValue) => {
+            PomoControlStorage.Set(key, newValue);
+            setState(newValue);
+        },
+        [key],
+    );
 
     const remove = useCallback(() => {
-        PomoControlStorage.remove(key);
+        PomoControlStorage.Remove(key);
         setState(undefined);
     }, [key]);
 
