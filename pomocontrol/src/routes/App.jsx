@@ -23,7 +23,7 @@ export function App() {
                     <PrivateCustomRoute exact render={() => <Home />} path="/" />
                     <PrivateCustomRoute exact render={() => <Home />} path="/dashboard" />
                     <PrivateCustomRoute exact render={() => <Profile />} path="/profile" />
-                    <PrivateCustomRoute exact render={() => <Register />} path="/register" />
+                    <PublicCustomRoute exact render={() => <Register />} path="/register" />
 
                     {/* {Routes.map((r) => (
                         <>
