@@ -8,12 +8,10 @@ import { App } from './routes';
 const history = createBrowserHistory();
 
 ReactDOM.render(
-    <React.StrictMode>
-        <Router history={history}>
-            <PomoControlProviderToken>
-                <App />
-            </PomoControlProviderToken>
-        </Router>
-    </React.StrictMode>,
+    <Router history={history}>
+        <PomoControlProviderToken>
+            <App />
+        </PomoControlProviderToken>
+    </Router>,
     document.getElementById('root'),
 );
